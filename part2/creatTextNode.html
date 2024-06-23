@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>DOM createTextNode() Method</title>
+	<style>
+		h1,
+		h2 {
+			color: green;
+			font-weight: bold;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>GeeksForGeels</h1>
+	<h2>DOM createTextNode() Method</h2>
+	<button onclick="geeks()">
+	Submit
+	</button>
+	<script>
+		function geeks() {
+			let x =
+				document.createTextNode("GeeksForGeeks");
+			document.body.appendChild(x);
+		}
+	</script>
+</body>
+
+</html>

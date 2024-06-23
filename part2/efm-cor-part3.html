@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        let h2 = document.createElement('h2');
+        let div = document.createElement('div');
+        let a = document.createElement('a');
+
+        let h2Cont = document.createTextNode('lien HTML');
+        let divCont = document.createTextNode('les lien HTML sont defini avec la balise a:');
+        let aCont = document.createTextNode('ceci est un lien');
+
+        h2.appendChild(h2Cont);
+        div.appendChild(divCont);
+        a.appendChild(aCont);
+
+        a.setAttribute('title', 'ceci est un lien');
+        a.setAttribute('alt', 'ceci est un lien');
+        a.setAttribute('href', '#');
+        div.appendChild(a);
+
+        console.log(h2);
+        console.log(div);
+
+
+    </script>
+</body>
+</html>
